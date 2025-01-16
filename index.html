@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IBIZA</title>
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5d1ed94654.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
 
         <nav>
             <div>
-                <ul class="navbar">
+                <ul id="navbar">
                     <li><a class="active" href="index.html">Inicio</a></li>
                     <li><a href="alta.html">Alta</a></li>
                     <li><a href="carrito.html">Carrito</a></li>
@@ -34,12 +35,127 @@
 
     <!-- Main -->
     <main>
-        <section class="hero">
+        <section id="hero">
             <div class="hero-text">
-                <h4>Descuentos especiales</h4>
+                <h4>¡Descuentos especiales!</h4>
                 <h2>Accede al catálogo <br>con las mejores rebajas</h2>
                 <p>Disfruta de un 40% de descuento en toda la tienda</p>
                 <button>¡Comprar!</button>
+            </div>
+        </section>
+
+        <section id="features" class="section-p">
+            <div class="fe-box">
+                <img src="imgs/features/f1.png" alt="Envío gratis">
+                <h6>Envío gratis</h6>
+            </div>
+            <div class="fe-box">
+                <img src="imgs/features/f2.png" alt="Pedidos Online">
+                <h6>Pedidos Online</h6>
+            </div>
+            <div class="fe-box">
+                <img src="imgs/features/f3.png" alt="Ahorra dinero">
+                <h6>Ahorra dinero</h6>
+            </div>
+            <div class="fe-box">
+                <img src="imgs/features/f4.png" alt="Promociones">
+                <h6>Promociones</h6>
+            </div>
+            <div class="fe-box">
+                <img src="imgs/features/f5.png" alt="Mejores ventas">
+                <h6>Mejores ventas</h6>
+            </div>
+            <div class="fe-box">
+                <img src="imgs/features/f6.png" alt="Soporte 24/7">
+                <h6>Soporte 24/7</h6>
+            </div>
+        </section>
+
+        <section id="products" class="section-p">
+            <h2>Nuestros productos</h2>
+            <p>La mejor colección de verano</p>
+
+            <div class="prods-wrapper">
+                <div class="prod">
+                    <img src="imgs/products/f1.jpg" alt="">
+                    <div class="des">
+                        <span>Zara</span>
+                        <h5>Camisa de astronauta</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$50</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f2.jpg" alt="">
+                    <div class="des">
+                        <span>Carolina Herrera</span>
+                        <h5>Camisa de playa</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$60</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f3.jpg" alt="">
+                    <div class="des">
+                        <span>Polo Club</span>
+                        <h5>Camisa de flores</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>Hérmes</span>
+                        <h5>Camisa de flores rosas</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>Gucci</span>
+                        <h5>Camisa de primavera</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$150</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>Prada</span>
+                        <h5>Camisa dos colores</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$85</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>Balenciaga</span>
+                        <h5>Pantalón de mujer</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$75</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod">
+                    <img src="imgs/products/f8.jpg" alt="">
+                    <div class="des">
+                        <span>Versace</span>
+                        <h5>Blusa de mujer</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$140</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
             </div>
         </section>
     </main>

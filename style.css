@@ -36,14 +36,35 @@ h4 {
     font-size: 2rem;
 }
 
+h6 {
+    font-size: 1.8rem;
+}
+
 p {
     font-size: 1.5rem
 }
 
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6 {
+    margin: 0;
+}
+
+.section-p {
+    padding: 4rem 8rem;
+}
+
+
+.section-m {
+    margin: 4rem 0;
+}
 /* Variables */
 :root {
-    --primario: hsl(265, 61%, 69%);
-    --secundario: hsl(0, 0%, 90%);
+    --primario: #987fb8;
+    --secundario: #e6e6e6;
     --terciario: #383838;
     --bgheader: #e3e6f3;
 }
@@ -56,23 +77,27 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 10rem 0 8rem;
-    box-shadow: 0 5px 30px hsl(0, 0%, 75%);
+    box-shadow: 0 5px 15px hsl(0, 0%, 75%);
     height: 100px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-.navbar {
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar li {
+#navbar li {
     list-style: none;
     padding: 0 3rem;
     position: relative;
 }
 
-.navbar a, svg {
+#navbar a, svg {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
@@ -80,14 +105,14 @@ header {
     transition: 0.4s ease;
 }
 
-.navbar a:hover,
+#navbar a:hover,
 svg:hover,
 a.active {
     color: var(--primario);
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after {
+#navbar li a.active::after,
+#navbar li a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -123,8 +148,8 @@ h4 {
     font-size: 2.3rem;
 }
 
-.hero {
-    background-image: url(/imgs/hero4.png);
+#hero {
+    background-image: url("imgs/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -140,6 +165,7 @@ h4 {
     max-width: 60%;
 }
 
+/* Button */
 .hero-text button {
     margin-top: 1.5rem;
     padding: 2rem;
@@ -153,4 +179,133 @@ h4 {
 
 .hero-text button:hover {
     box-shadow: 0 0 20px hsl(0, 0%, 80%);
+}
+
+/* ----- Features ----- */
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+}
+.fe-box {
+    width: 220px;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.fe-box h6 {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    padding: 9px 8px 6px 8px;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+.fe-box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+.fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+.fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+.fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+.fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+/* ----- Products ----- */
+
+#products {
+    text-align: center;
+}
+
+/* Card */
+.prod {
+    width: 23%;
+    min-width: 25rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.prod:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.prod img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.des span {
+    color: #606063;
+    font-size: 1.6rem;
+}
+
+.des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 1.9rem;
+}
+
+.des h4 {
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+    color: var(--primario);
+}
+
+.cart {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: var(--bgheader);
+    color: var(--primario);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* Products wrapper */
+.prods-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
