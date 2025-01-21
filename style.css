@@ -53,7 +53,8 @@ h2,
 h3,
 h4,
 h5, 
-h6 {
+h6,
+p {
     margin: 0;
 }
 
@@ -81,7 +82,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 10rem 0 8rem;
-    box-shadow: 0 5px 15px hsl(0, 0%, 75%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     height: 100px;
     z-index: 999;
     position: sticky;
@@ -101,17 +102,24 @@ header {
     position: relative;
 }
 
-#navbar a, svg {
+#navbar a, svg, #navbar i {
     text-decoration: none;
     font-size: 2rem;
-    font-weight: 500;
     color: var(--terciario);
     transition: 0.4s ease;
 }
 
-#navbar a:hover,
+#navbar i {
+    cursor: pointer;
+}
+
+#navbar a {
+    font-weight: 500;
+}
+
+#navbar a:hover, #navbar i:hover,
 svg:hover,
-a.active {
+#navbar a.active {
     color: var(--primario);
 }
 
@@ -132,18 +140,19 @@ svg {
 
 /* ----- Hero ----- */
 
-h2,
+.hero-text h2,
 h4 {
     margin: 0 0 2rem 0;
 }
 
-h2 {
+.hero-text h2 {
     font-size: 6rem;
 }
 
-h4 {
+.hero-text h4 {
     font-size: 4rem;
 }
+
 .hero-text h4 {
     color: var(--primario);
 }
@@ -356,7 +365,7 @@ h4 {
 }
 
 #banner button a {
-    color: #000000;
+    color: var(--terciario);
     text-decoration: none;
 }
 
@@ -475,3 +484,90 @@ h4 {
 #banner-3 .banner-box:nth-child(3) {
     background-image: url(imgs/banner/b18.jpg);
 }
+
+/* ----- Fourth Banner ----- */
+
+#banner-4 {
+    height: 20vh;
+    background-image: url(imgs/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: var(--primario);
+}
+
+/* ----- Footer ----- */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+footer > div:nth-child(1) img {
+    margin-bottom: 3.5rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+footer h4 {
+    font-size: 2.4rem;
+}
+
+footer p, footer a {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--terciario);
+}
+
+footer a:hover {
+    color: var(--primario);
+    text-decoration: underline;
+}
+
+.follow h4 {
+    margin-top: 20px;
+}
+
+.follow i {
+    padding-right: 1.4rem;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.follow i:hover {
+    color: var(--primario);
+}
+
+footer .install-row img {
+    border: 2px solid #088178;
+    border-radius: 6px;
+} 
+
+.install img {
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+}
+
+.install p {
+    font-size: 1.8rem;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 3rem;
+}
+
+.copyright i {
+    color: var(--primario);
+}
+
