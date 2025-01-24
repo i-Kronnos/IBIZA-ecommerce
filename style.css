@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 h3 {
@@ -66,6 +66,11 @@ p {
 .section-m {
     margin: 4rem 0;
 }
+
+/* .border-utility {
+    border: 1px solid #000;
+}
+ */
 /* Variables */
 :root {
     --primario: #987fb8;
@@ -81,7 +86,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10rem 0 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     height: 100px;
     z-index: 999;
@@ -102,7 +108,9 @@ header {
     position: relative;
 }
 
-#navbar a, svg, #navbar i {
+#navbar a, 
+#navbar svg, 
+#navbar i {
     text-decoration: none;
     font-size: 2rem;
     color: var(--terciario);
@@ -117,7 +125,8 @@ header {
     font-weight: 500;
 }
 
-#navbar a:hover, #navbar i:hover,
+#navbar a:hover, 
+#navbar i:hover,
 svg:hover,
 #navbar a.active {
     color: var(--primario);
@@ -140,24 +149,24 @@ svg {
 
 /* ----- Hero ----- */
 
-.hero-text h2,
-h4 {
+#hero h2,
+#hero h4 {
     margin: 0 0 2rem 0;
 }
 
-.hero-text h2 {
+#hero h2 {
     font-size: 6rem;
 }
 
-.hero-text h4 {
+#hero h4 {
     font-size: 4rem;
 }
 
-.hero-text h4 {
+#hero h4 {
     color: var(--primario);
 }
 
-.hero-text p {
+#hero p {
     font-size: 2.3rem;
 }
 
@@ -174,12 +183,8 @@ h4 {
     justify-content: center;
 }
 
-.hero-text {
-    max-width: 60%;
-}
-
 /* Button */
-.hero-text button {
+#hero button {
     margin-top: 1.5rem;
     padding: 2rem;
     border: none;
@@ -190,17 +195,21 @@ h4 {
     transition: 0.3s ease;
 }
 
-.hero-text button:hover {
+#hero button:hover {
     box-shadow: 0 0 20px hsl(0, 0%, 80%);
+}
+
+#hero button a {
+    color: var(--terciario);
 }
 
 /* ----- Features ----- */
 
 #features {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 4rem;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .fe-box {
     width: 220px;
@@ -302,7 +311,7 @@ h4 {
 
 .des h4 {
     font-size: 2.5rem;
-    margin: 10px 0 0 0;
+    margin: 1.5rem 0 0 0;
     color: var(--primario);
 }
 
@@ -338,7 +347,7 @@ h4 {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 #banner h1 {
@@ -456,8 +465,8 @@ h4 {
     justify-content: center;
     align-items: flex-start;
     background-image: url(imgs/banner/b7.jpg);
-    width: 30%;
-    min-width: 37rem;
+    min-width: 30%;
+    /* min-width: 37rem; */
     height: 35vh;
     background-size: cover;
     background-position: center;
@@ -532,6 +541,7 @@ footer a:hover {
 
 .follow h4 {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .follow i {
@@ -571,3 +581,223 @@ footer .install-row img {
     color: var(--primario);
 }
 
+
+/* ----------------------------- */
+
+/* ----- Responsive design ----- */
+
+/* 799px Media Queries */
+
+#mobile-menu {
+    display: none;
+}
+
+#close-mb-menu {
+    display: none;
+}
+
+@media (max-width: 799px) {
+
+    .section-p {
+        padding: 4rem 4rem;
+    }
+
+    /* Header */
+        .no-display {
+            display: none;
+        }
+
+        #navbar.active {
+            right: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;
+            background-color: #e3e6f3;
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            padding: 80px 0 0 10px;
+            margin: 0;
+            transition: 0.3s;
+        }
+
+        #navbar li {
+            margin-bottom: 25px;
+        }
+
+        #mobile-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        #mobile-menu i, 
+        #mobile-menu svg {
+            color: var(--terciario);
+            transition: 0.4s ease;
+            font-size: 3rem;
+            margin: 0 12px;
+            cursor: pointer;
+        }
+
+        #mobile-menu svg {
+            height: 3rem;
+        }
+
+        #mobile-menu svg:hover,
+        #mobile-menu i:hover {
+            color: var(--primario);
+        }
+
+        #mobile-menu a {
+            padding-top: 5px;
+        }
+
+        #close-mb-menu {
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            color: var(--terciario);
+        }
+
+        #close-mb-menu i {
+            font-size: 2.5rem;
+        }
+    
+    /* Hero */
+        #hero {
+            height: auto;
+            padding: 3rem 8rem;
+            background-position: top 30% right 30%;
+        }
+
+    /* Features */
+        #features {
+            justify-content: center;
+        }
+
+        .fe-box {
+            margin: 15px;
+        }
+
+    /* Products */
+        .prods-wrapper {
+            justify-content: center;
+        }
+
+        .prod {
+            margin: 15px;
+        }
+    
+    /* Banner */
+        #banner-1 {
+            height: 20vh;
+        }
+
+    /* Second Banner */
+        #banner-2 .banner-box {
+            min-width: 100%;
+            height: 35vh;
+        }
+    
+    /* Third Banner */
+        #banner-3 {
+            padding: 0 4rem;
+        }
+        #banner-3 .banner-box {
+            width: 28%;
+        }
+    
+    /* Fourth Banner */
+        #banner-4 {
+            margin: 4rem 0;
+        }
+}
+
+/* 477px Media Queries */
+@media (max-width: 477px) {
+
+    .section-p {
+        padding: 2rem;
+    }
+
+    /* Header */
+        header {
+            padding: 1rem 3rem;
+        }
+    
+    /* Hero */
+        #hero {
+            padding: 0 2rem;
+            height: 70vh;
+            background-position: 55%;
+        }
+
+        #hero h2 {
+            font-size: 3.5rem;
+        }
+        
+        #hero h4 {
+            font-size: 2.2rem;
+        }
+        
+        #hero h4 {
+            color: var(--primario);
+        }
+        
+        #hero p {
+            font-size: 1.8rem;
+        }
+
+        #hero button {
+            padding: 1rem;
+            font-size: 2rem;
+            border-radius: 6px;
+        }
+    
+    /* Features */
+        #features {
+            justify-content: space-between;
+        }
+
+        #features .fe-box {
+            width: 160px;
+            margin: 0 0 15px 0;
+        }
+
+    /* Products */
+        .prod {
+            width: 100%;
+        }
+
+    /* Banner */
+        #banner h1 {
+            font-size: 4rem;
+        }
+
+    /* Second Banner */
+        #banner-2 .banner-box {
+            height: 40vh;
+        }
+
+        #banner-2 .banner-box:nth-child(2) {
+            margin-top: 2rem;
+        }
+    
+    /* Third Banner */
+        #banner-3 {
+            padding: 0 2rem;
+        }
+
+        #banner-3 .banner-box {
+            width: 100%;
+            margin: 2rem 0;
+    }
+}
