@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 h3 {
@@ -33,7 +33,11 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 1.9rem
 }
 
 h6 {
@@ -306,11 +310,9 @@ svg {
 .des h5 {
     padding-top: 7px;
     color: #1a1a1a;
-    font-size: 1.9rem;
 }
 
 .des h4 {
-    font-size: 2.5rem;
     margin: 1.5rem 0 0 0;
     color: var(--primario);
 }
@@ -413,14 +415,12 @@ svg {
 .banner-box h4 {
     color: #fff;
     font-weight: 300;
-    font-size: 2.5rem;
     margin: 0;
 }
 
 .banner-box h2 {
     color: #fff;
     font-weight: 800;
-    font-size: 3.5rem;
     margin: 0;
 }
 
@@ -586,8 +586,6 @@ footer .install-row img {
 
 /* ----- Responsive design ----- */
 
-/* 799px Media Queries */
-
 #mobile-menu {
     display: none;
 }
@@ -596,12 +594,42 @@ footer .install-row img {
     display: none;
 }
 
-@media (max-width: 799px) {
+/* 1320px Media Queries */
 
-    .section-p {
-        padding: 4rem 4rem;
-    }
+@media (max-width: 1320px) {
 
+    /* Second and Third Banner */
+        #banner-2, #banner-3 {
+            justify-content: center;
+        }
+
+        #banner-2 .banner-box,
+        #banner-3 .banner-box {
+            width: 100%;
+        }
+
+        #banner-2 .banner-box:nth-child(2) {
+            margin-top: 2rem;
+        }
+
+        #banner-3 .banner-box {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+}
+
+/* 1103px Media Queries */
+
+@media (max-width: 1103px) {
+
+    /* Banner */
+        #banner h1 {
+            font-size: 4.5rem;
+        }
+}
+
+@media (max-width: 1011px) {
+        
     /* Header */
         .no-display {
             display: none;
@@ -670,12 +698,56 @@ footer .install-row img {
         #close-mb-menu i {
             font-size: 2.5rem;
         }
-    
+
+    /* Hero */
+        #hero h2 {
+            font-size: 4.5rem;
+        }
+        
+        #hero h4 {
+            font-size: 3rem;
+        }
+
+        #hero p {
+            font-size: 1.9rem;
+        }
+}
+
+/* 799px Media Queries */
+@media (max-width: 799px) {
+
+    .section-p {
+        padding: 4rem 4rem;
+    }
+
+    /* Header */
+        header {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
     /* Hero */
         #hero {
             height: auto;
-            padding: 3rem 8rem;
+            padding: 4rem;
             background-position: top 30% right 30%;
+        }
+
+        #hero h2 {
+            font-size: 3.8rem;
+        }
+        
+        #hero h4 {
+            font-size: 2.5rem;
+        }
+
+        #hero p {
+            font-size: 2rem;
+        }
+
+        #hero button {
+            padding: 1.5rem;
+            font-size: 2.5rem;
         }
 
     /* Features */
@@ -695,10 +767,9 @@ footer .install-row img {
         .prod {
             margin: 15px;
         }
-    
-    /* Banner */
-        #banner-1 {
-            height: 20vh;
+
+        .prod:hover {
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
         }
 
     /* Second Banner */
@@ -710,9 +781,6 @@ footer .install-row img {
     /* Third Banner */
         #banner-3 {
             padding: 0 4rem;
-        }
-        #banner-3 .banner-box {
-            width: 28%;
         }
     
     /* Fourth Banner */
@@ -730,7 +798,11 @@ footer .install-row img {
 
     /* Header */
         header {
-            padding: 1rem 3rem;
+            padding: 1rem 2rem;
+        }
+
+        header img {
+            height: 55px;
         }
     
     /* Hero */
@@ -746,10 +818,6 @@ footer .install-row img {
         
         #hero h4 {
             font-size: 2.2rem;
-        }
-        
-        #hero h4 {
-            color: var(--primario);
         }
         
         #hero p {
@@ -774,6 +842,11 @@ footer .install-row img {
 
     /* Products */
         .prod {
+            width: 100%;
+        }
+
+        .prod:hover {
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
             width: 100%;
         }
 
