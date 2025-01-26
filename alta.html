@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <!-- ------------------ HTML code for Esteban Quiñones ------------------ -->
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBIZA</title>
-    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/5d1ed94654.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta de productos</title>
+        <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/5d1ed94654.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/alta-style.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
 <body>
     <!-- Header -->
     <header>
@@ -20,8 +21,8 @@
         <nav>
             <div>
                 <ul id="navbar">
-                    <li><a class="active" href="index.html">Inicio</a></li>
-                    <li><a href="alta.html">Alta</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="alta.html">Alta</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li class="no-display"><a href="#">
@@ -44,45 +45,21 @@
     <main>
 
         <!-- Hero -->
-        <section id="hero">
-                <h4>¡Descuentos especiales!</h4>
-                <h2>Accede al catálogo <br>con las mejores rebajas</h2>
-                <p>Disfruta de un 40% de descuento en toda la tienda</p>
-                <button><a href="#products">¡Comprar!</a></button>
+        <section id="hero-alta">
+            <h1>Alta de productos</h1>
+            <p>Aquí puedes agregar y ver tus propios productos</p>
+            <i id="hero-arrow" class="fa-solid fa-arrow-down fa-2xl"></i>
         </section>
 
-        <!-- Features -->
-        <section id="features" class="section-p">
-            <div class="fe-box">
-                <img src="imgs/features/f1.png" alt="Envío gratis">
-                <h6>Envío gratis</h6>
-            </div>
-            <div class="fe-box">
-                <img src="imgs/features/f2.png" alt="Pedidos Online">
-                <h6>Pedidos Online</h6>
-            </div>
-            <div class="fe-box">
-                <img src="imgs/features/f3.png" alt="Ahorra dinero">
-                <h6>Ahorra dinero</h6>
-            </div>
-            <div class="fe-box">
-                <img src="imgs/features/f4.png" alt="Promociones">
-                <h6>Promociones</h6>
-            </div>
-            <div class="fe-box">
-                <img src="imgs/features/f5.png" alt="Mejores ventas">
-                <h6>Mejores ventas</h6>
-            </div>
-            <div class="fe-box">
-                <img src="imgs/features/f6.png" alt="Soporte 24/7">
-                <h6>Soporte 24/7</h6>
-            </div>
+        <!-- Alta -->
+        <section id="alta" class="section-p border-utility">
+            <h2>Mis productos</h2>
+            <p>Aun no has agregado ningún producto</p>
         </section>
 
         <!-- Products -->
         <section id="products" class="section-p">
             <h2>Nuestros productos</h2>
-            <p>La mejor colección de verano</p>
 
             <div class="prods-wrapper">
                 <div class="prod" onclick="window.location.href = 'single-product.html'">
@@ -165,21 +142,6 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Banner -->
-        <section id="banner" class="section-p section-m">
-            <h1>En <span>IBIZA</span> compra lo que necesitas, <br> vende lo que no.</h1>
-            <button><a href="alta.html">Ir a Alta</a></button>
-        </section>
-
-        <!-- New Collection -->
-        <section id="new-collection" class="section-p">
-            <h2>Nueva colección para hombres</h2>
-            <p>La mejor ropa para él</p>
-
-            <div class="prods-wrapper">
                 <div class="prod" onclick="window.location.href = 'single-product.html'">
                     <img src="imgs/products/n1.jpg" alt="">
                     <div class="des">
@@ -263,36 +225,11 @@
             </div>
         </section>
 
-        <!-- Second Banner -->
-        <section id="banner-2" class="section-p">
-            <div class="banner-box">
-                <h4>Gran Promoción</h4>
-                <h2>Compra 1 y lleva 2</h2>
-                <p>Los clásicos de siempre en IBIZA</p>
-                <button>¡Lo quiero!</button>
-            </div>
-            <div class="banner-box">
-                <h4>Primavera/Verano</h4>
-                <h2>Proxima colección</h2>
-                <p>Los clásicos de siempre en IBIZA</p>
-                <button>Colección</button>
-            </div>
-        </section>
-
-        <!-- Third Banner -->
-        <section id="banner-3" class="section-p">
-            <div class="banner-box">
-                <h3>Venta de temporada</h3>
-                <h4>Colección de invierno con 50% off</h4>
-            </div>
-            <div class="banner-box">
-                <h3>Ropa de invierno</h3>
-                <h4>Frio y estilo</h4>
-            </div>
-            <div class="banner-box">
-                <h3>Camisas</h3>
-                <h4>Nuevas modas en camino</h4>
-            </div>
+        <!-- Products Navigation -->
+        <section class="section-p" id="products-navigation">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
         </section>
 
         <!-- Fourth Banner -->
@@ -354,7 +291,7 @@
             <p>© 2025. Todos los derechos reservados</p>
         </div>
     </footer>
-
+    
     <script src="/js/main.js"></script>
 </body>
 </html>

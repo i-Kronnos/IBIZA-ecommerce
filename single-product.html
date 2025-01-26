@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- ------------------ HTML code for Esteban Quiñones ------------------ -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBIZA</title>
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5d1ed94654.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/single-product-style.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="imgs/logo/3.icon-color-nobg.png" alt="logo" height="70px"></a>
+
+        <nav>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="active" href="alta.html">Alta</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="no-display"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" color="#383838" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="25" height="25" stroke-width="2"> <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"></path> <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path> </svg> 
+                    </a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <a id="close-mb-menu"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </div>
+            <div id="mobile-menu">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" color="#383838" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"></path> <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path> </svg> 
+                </a>
+                <i id="menu-bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Product Detail -->
+        <section class="section-p" id="product-details">
+            <div class="single-product-image">
+                <img src="imgs/products/f1.jpg" alt="product" width="100%" id="main-image">
+            
+                <div class="small-images-wrapper">
+                    <div class="small-image-col">
+                        <img src="imgs/products/f1.jpg" alt="" width="100%" class="small-image">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="imgs/products/f2.jpg" alt="" width="100%" class="small-image">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="imgs/products/f3.jpg" alt="" width="100%" class="small-image">
+                    </div>
+                    <div class="small-image-col">
+                        <img src="imgs/products/f4.jpg" alt="" width="100%" class="small-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-product-details">
+                <h6>Inicio / Camisa</h6>
+                <h4>Camisa de astronauta</h4>
+                <h2>$50</h2>
+
+                <select>
+                    <option>Seleccionar talla</option>
+                    <option>Pequeña</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                    <option>Extra grande</option>
+                </select>
+
+                <input type="number" value="1">
+                <button>Agregar al carrito</button>
+
+                <h4>Detalles del producto</h4>
+                <p>Id consequat voluptate est do eiusmod Lorem. Tempor occaecat exercitation id occaecat et qui exercitation elit Lorem occaecat minim ut esse exercitation. Id aliqua minim nulla elit velit culpa amet aute aliqua cupidatat.Quis nisi officia sint sint Lorem sint sunt consequat mollit eu. Ea ut ipsum consectetur veniam commodo proident proident dolor. Sint ipsum nisi ea eu nisi ut. Esse voluptate aliqua aute cillum. Deserunt enim labore commodo aliqua occaecat deserunt dolor minim laborum officia veniam ex irure. Dolor mollit cillum enim culpa tempor dolore id ullamco.</p>
+            </div>
+        </section>
+
+        <!-- New Collection -->
+        <section id="new-collection" class="section-p">
+            <h2>De nuestro catálogo</h2>
+
+            <div class="prods-wrapper">
+                <div class="prod" onclick="window.location.href = 'single-product.html'">
+                    <img src="imgs/products/n1.jpg" alt="">
+                    <div class="des">
+                        <span>Zara</span>
+                        <h5>Camisa azul claro</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$50</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod" onclick="window.location.href = 'single-product.html'">
+                    <img src="imgs/products/n2.jpg" alt="">
+                    <div class="des">
+                        <span>Carolina Herrera</span>
+                        <h5>Camisa gris</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$60</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod" onclick="window.location.href = 'single-product.html'">
+                    <img src="imgs/products/n3.jpg" alt="">
+                    <div class="des">
+                        <span>Polo Club</span>
+                        <h5>Camisa blanca</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$80</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+                <div class="prod" onclick="window.location.href = 'single-product.html'">
+                    <img src="imgs/products/n4.jpg" alt="">
+                    <div class="des">
+                        <span>Hérmes</span>
+                        <h5>Camisa de texturas</h5>
+                        <p class="des-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fourth Banner -->
+        <section id="banner-4" class="section-p">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-p">
+        <div class="col">
+            <img src="imgs/logo/3.icon-color-nobg.png" alt="ibiza-logo" width="180">
+            <h4>Contacto</h4>
+            <p><b>Dirección: </b>Santa Marta, Magdalena, Colombia</p>
+            <p><b>Teléfonos: </b>+00 011 222 33344 / 333 444 555</p>
+            <p><b>Horas: </b>10:00 AM - 6:00 PM Lunes - Viernes</p>
+
+            <div class="follow">
+                <h4>Síguenos</h4>
+                <div class="follow-icon">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-x fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-youtube fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <h4>Acerca</h4>
+            <a href="#">Nosotros</a>
+            <a href="#">Información de pedidos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Contáctanos</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi cuenta</h4>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Seguir mi orden</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Instala nuestra app</h4>
+            <p>Disponible en Google Play Store o App Store</p>
+            <div class="install-row">
+                <img src="imgs/pay/play.jpg" alt="play-store-logo">
+                <img src="imgs/pay/app.jpg" alt="play-store-logo">
+            </div>
+            
+            <p>Pasarela de pagos asegurada</p>
+            <img src="imgs/pay/pay.png" alt="pasarela-asegurada-logos">
+        </div>
+
+        <div class="copyright">
+            <p>Hecho con <i class="fa-solid fa-heart"></i> por <b>Esteban Quiñones</b></p>
+            <p>© 2025. Todos los derechos reservados</p>
+        </div>
+    </footer>
+        
+    <script src="/js/single-product-app.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

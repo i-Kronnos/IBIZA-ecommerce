@@ -1,0 +1,107 @@
+/* ------------------ CSS code for Esteban Quiñones ------------------ */
+
+/* ----- Product Details ----- */
+
+#product-details {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#product-details .single-product-image {
+    width: 40%;
+    margin-right: 5rem;
+}
+
+.small-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.small-image-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-product-details {
+    width: 50%;
+    padding-top: 3rem;
+}
+
+.single-product-details h4:nth-child(2) {
+    padding: 2rem 0;
+}
+
+.single-product-details select {
+    display: block;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    font-size: 1.6rem;
+}
+
+.single-product-details input {
+    width: 5rem;
+    height: 4.7rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    border-radius: 6px;
+}
+
+.single-product-details input:focus {
+    outline: none;
+}
+
+.single-product-details button {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+    background-color: var(--primario);
+    color: #fff;
+    font-weight: 700;
+}
+
+.single-product-details button:hover {
+    padding: 1.5rem 2.6rem;
+    box-shadow: 0 0 20px hsl(0, 0%, 80%);
+}
+
+.single-product-details p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+.single-product-details h4:nth-child(7) {
+    margin-bottom: 1.4rem;
+}
+
+/* ----------------------------- */
+
+/* ----- Responsive design ----- */
+
+/* 477px Media Queries */
+
+@media (max-width: 477px) {
+
+    /* Product Detail */
+        #product-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #product-details .single-product-image {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .single-product-details {
+            width: 100%;
+        }
+}
