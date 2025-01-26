@@ -1,0 +1,101 @@
+/* ------------------ CSS code for Esteban Quiñones ------------------ */
+
+/* ----- Hero ----- */
+
+#hero-nosotros {
+    background-image: url(/imgs/about/banner.png);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1.4rem;
+    color: #fff;
+}
+
+/* ----- About Head ----- */
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+.about-head-text {
+    padding-left: 4rem;
+}
+
+.about-head-text h2 {
+    margin-bottom: 1.8rem;
+}
+
+.about-head-text p, 
+marquee {
+    font-size: 1.7rem;
+}
+
+/* ----------------------------- */
+
+/* ----- Responsive design ----- */
+
+/* 1011px Media Queries */
+@media (max-width: 1011px) {
+
+    /* About Head */
+        #about-head {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #about-head img {
+            width: 100%;
+            height: auto;
+        }
+
+        .about-head-text {
+            padding-left: 0;
+        }
+
+        .about-head-text h2 {
+            margin-top: 2rem;
+        }
+}
+
+/* 799px Media Queries */
+@media (max-width: 799px) {
+
+    /* About Head */
+        .about-head-text h2 {
+            text-align: center;
+        }
+
+        .about-head-text p, 
+        marquee {
+            font-size: 1.9rem;
+        }
+}
+
+/* 477px Media Queries */
+@media (max-width: 477px) {
+
+    /* Hero */
+        #hero-nosotros h1 {
+            font-size: 4rem;
+        }
+
+    /* About Head */
+        .about-head-text h2 {
+            font-size: 3.5rem;
+        }
+
+        .about-head-text p {
+            line-height: 3rem;
+        }
+}
