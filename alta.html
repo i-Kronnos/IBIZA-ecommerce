@@ -10,8 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/alta-style.css">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/alta-style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
     <!-- Header -->
@@ -25,7 +25,7 @@
                     <li><a class="active" href="alta.html">Alta</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li class="no-display"><a href="#">
+                    <li class="no-display"><a href="carrito.html">
                         <svg xmlns="http://www.w3.org/2000/svg" color="#383838" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="25" height="25" stroke-width="2"> <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"></path> <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path> </svg> 
                     </a></li>
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div id="mobile-menu">
-                <a href="#">
+                <a href="carrito.html">
                     <svg xmlns="http://www.w3.org/2000/svg" color="#383838" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"></path> <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path> </svg> 
                 </a>
                 <i id="menu-bar" class="fa-solid fa-bars"></i>
@@ -49,6 +49,89 @@
             <h1>Alta de productos</h1>
             <p>Aquí puedes agregar y ver tus propios productos</p>
             <i id="hero-arrow" class="fa-solid fa-arrow-down fa-2xl"></i>
+        </section>
+
+        <!-- Alta Form -->
+        <section id="alta-form" class="section-p">
+            <div class="wrapper">
+                <div class="title">¡Llena este formulario y dale de alta a tus productos!</div>
+        
+                <form action="#">
+                    <div class="product-details">
+        
+                        <div class="row-1">
+        
+                            <div class="col-1">
+                                <div class="input-box">
+                                    <label for="nombre">Nombre</label>
+                                    <input id="nombre" name="nombre" type="text" placeholder="Nombre del producto" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="marca">Marca</label>
+                                    <input id="marca" name="marca" type="text" placeholder="Marca del producto" required>
+                                </div> 
+                                <div class="input-box">
+                                    <label for="categoria">Categoría</label>
+                                    <input id="categoria" name="categoria" type="text" placeholder="Categoría del producto" required>
+                                </div>
+                            </div>
+            
+                            <div class="des-edad">
+                                <div class="col-2">
+                                    <div class="input-box">
+                                        <label for="des-corta">Descripción corta</label>
+                                        <input id="des-corta" name="des-corta" type="text" placeholder="Descripción corta" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="des-larga">Descripción larga</label>
+                                        <input id="des-larga" name="des-larga" type="text" placeholder="Descripción larga" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <div class="input-box">
+                                        <label for="edad-desde">Edad desde</label>
+                                        <input id="edad-desde" name="edad-desde" type="number" placeholder="Edad desde" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="edad-hasta">Edad hasta</label>
+                                        <input id="edad-hasta" name="edad-hasta" type="number" placeholder="Edad hasta" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="row-2">
+        
+                            <div class="col-4">
+                                <div class="input-box">
+                                    <label for="precio">Precio</label>
+                                    <input id="precio" name="precio" type="number" placeholder="Precio del producto" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="stock">Stock</label>
+                                    <input id="stock" name="stock" type="number" placeholder="Stock del producto" required>
+                                </div>
+                                <div class="envio-box">
+                                    <label for="envio">Envío</label>
+                                    <input id="envio" name="envio" type="checkbox">
+                                </div>
+                            </div>
+        
+                            <div class="col-5">
+                                <div id="foto">
+                                    <p>La imagen de tu producto va aquí</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="agregar-button">
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- Alta -->
@@ -259,17 +342,17 @@
         
         <div class="col">
             <h4>Acerca</h4>
-            <a href="#">Nosotros</a>
+            <a href="nosotros.html">Nosotros</a>
             <a href="#">Información de pedidos</a>
             <a href="#">Política de privacidad</a>
             <a href="#">Términos y condiciones</a>
-            <a href="#">Contáctanos</a>
+            <a href="contacto.html">Contáctanos</a>
         </div>
 
         <div class="col">
             <h4>Mi cuenta</h4>
             <a href="#">Iniciar sesión</a>
-            <a href="#">Ver carrito</a>
+            <a href="carrito.html">Ver carrito</a>
             <a href="#">Seguir mi orden</a>
             <a href="#">Ayuda</a>
         </div>
@@ -292,6 +375,6 @@
         </div>
     </footer>
     
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

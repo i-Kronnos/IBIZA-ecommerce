@@ -3,7 +3,7 @@
 /* ----- Hero ----- */
 
 #hero-alta {
-    background-image: url(/imgs/banner/b1.jpg);
+    background-image: url(../imgs/banner/b1.jpg);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -31,6 +31,149 @@
     margin-top: 3rem;
     color: #fff;
 }
+
+/* ----- Alta Form ----- */
+
+#alta-form {
+    background: linear-gradient(135deg, #71b7e6, #987fb8);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.wrapper {
+    /* max-width: 70rem; */
+    width: 100%;
+    background-color: #fff;
+    padding: 2.5rem 3rem;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.wrapper form .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.row-1, 
+.row-2 {
+    display: flex;
+}
+
+.col-1, .des-edad, .col-4, .col-5 {
+    width: 50%;
+}
+
+.input-box {
+    width: calc(100% - 20px);
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    display: block;
+    width: 99%;
+    margin: .5rem 0 1rem 0;
+    height: 4.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    padding-left: .5rem;
+}
+
+.col-3,
+.col-5,
+.agregar-button {
+    display: flex;
+}
+
+.input-box label,
+.envio-box label,
+.col-5 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.col-5,
+.agregar-button {
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1 input {
+    width: 70%;
+}
+
+.col-3 input,
+.col-4 input {
+    width: 40%;
+}
+
+.envio-box input {
+    display: block;
+    width: auto;
+    transform: scale(2);
+    margin: 1rem 0 1rem .7rem;
+    outline: none;
+    border: 2px solid #000;
+}
+
+
+.agregar-button button {
+    padding: 1.2rem 4rem;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+    background: linear-gradient(135deg, #71b7e6, #987fb8);
+    color: #fff;
+    font-weight: 700;
+}
+
+.agregar-button button:hover {
+    box-shadow: 0 0 20px hsl(0, 0%, 80%);
+}
+
+#foto {
+    background: linear-gradient(135deg, #71b7e6, #987fb8);
+    height: 18rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Validations */
+
+#alta-form form input:invalid:not(:placeholder-shown),
+#alta-form form input:valid:not(:placeholder-shown) {
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
+
+#alta-form form input:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+    background-image: url(../imgs/icons/checked-red.png);
+}
+
+#alta-form form input:valid:not(:placeholder-shown) {
+    border: 2px solid green;
+    background-image: url(../imgs/icons/checked-green.png);
+}
+
 
 /* ----- Alta ----- */
 #alta {
@@ -66,11 +209,64 @@
         #hero-alta p {
             font-size: 1.8rem;
         }
+
+    /* Alta Form */
+        .col-3 input {
+            width: 60%;
+        }
+
+        .wrapper form .product-details {
+            padding: 0;
+        }
     
     /* My Products and Products */
         #alta h2,
         #products h2 {
             font-size: 3.8rem;
+        }
+}
+
+/* 690px Media Queries */
+@media (max-width: 690px) {
+
+    /* Alta Form */
+        .row-1,
+        .row-2 {
+            flex-direction: column;
+        }
+
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .des-edad {
+            width: 100%;
+        }
+
+        .col-1 input,
+        .col-2 input {
+            width: 100%;
+        }
+
+        .col-3 input,
+        .col-4 input {
+            width: 100%;
+        }
+
+        .col-3 .input-box:nth-child(1) {
+            margin-right: 4rem;
+        }
+
+        .envio-box label {
+            display: block;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .col-5,
+        .agregar-button {
+            margin-top: 3rem;
         }
 }
 
