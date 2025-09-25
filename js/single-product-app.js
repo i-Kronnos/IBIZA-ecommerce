@@ -21,3 +21,11 @@ smallImage[3].onclick = function() {
 };
 
 // --------------------------------------------------
+
+// --------------- Global Functions ---------------
+
+function start () {
+    console.warn(document.querySelector('title').innerText);
+}
+
+// ------------------------------------------------

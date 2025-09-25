@@ -62,6 +62,10 @@ p {
     margin: 0;
 }
 
+input, button {
+    font-family: "Poppins";
+}
+
 .section-p {
     padding: 4rem 8rem;
 }
